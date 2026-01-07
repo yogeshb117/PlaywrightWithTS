@@ -9,6 +9,7 @@ test.beforeAll(async () => {
     console.log('This is before all tests');
 });
 
+//Test Hooks: beforeEach and afterEach
 test.beforeEach(async ({page}) => {
     await page.goto('https://duckduckgo.com/');
     console.log('This is before each test');
