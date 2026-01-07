@@ -7,9 +7,9 @@ test('Handling IFrame, Drag and Drop Elements in Playwright', async ({ page }) =
     //Left button click
     //await page.getByRole('link', { name: 'Playwright by Testers Talk -' }).first().click({button:'left'});    
     //middle button click
-    //await page.getByRole('link', { name: 'Playwright by Testers Talk -' }).first().click({ button: 'middle' });
+    await page.getByRole('link', { name: 'Playwright by Testers Talk -' }).first().click({ button: 'middle' });
     //Right button click
-    await page.getByRole('link', { name: 'Playwright by Testers Talk -' }).first().click({button:'right'}); 
+   // await page.getByRole('link', { name: 'Playwright by Testers Talk -' }).first().click({button:'right'}); 
     //Mouse hover action
     //await page.getByLabel('dropdown dropdown--settings dropdown--settings--icon').hover();
 
