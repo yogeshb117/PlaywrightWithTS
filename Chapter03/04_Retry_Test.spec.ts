@@ -1,8 +1,8 @@
 // Importe playwright module
-import {test, expect } from '@playwright/test'
+import { test, expect } from '@playwright/test'
 
 //Write a test
-test('My First Playwright Typescript Test', async ({page}) => {
+test('My First Playwright Typescript Test 1', { tag: ['@smoketesting'] }, async ({ page }) => {
 
     console.log('Test Execution Started..... ');
     //Go to URL
@@ -15,5 +15,5 @@ test('My First Playwright Typescript Test', async ({page}) => {
     //Click on playlist link
     await page.getByRole('link', { name: 'Playwright by Testers Talk -' }).first().click();
     //Validate webpage Title
-    await expect(page).toHaveTitle('Playwright by Testers Talk ✅ - YouTube');
+    await expect(page).toHaveTitle('Playwright TypeScript by Testers Talk ✅ - YouTube');
 });

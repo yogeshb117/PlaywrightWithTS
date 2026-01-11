@@ -12,7 +12,7 @@ test('Mouse Action in Playwright', async ({ page }) => {
     // await page.getByRole('link', { name: 'Playwright by Testers Talk -' }).first().click({button:'right'}); 
     //Mouse hover action
     await page.goto('https://www.google.com/');
-    await page.getByLabel('Search by voice').first().hover();
+    //await page.getByLabel('Search by voice').first().hover();
     //Double click action
     await page.getByLabel('Search by voice').dblclick();
 });
