@@ -4,7 +4,7 @@ import {test, expect } from '@playwright/test'
 //Write a test
 test('My First Playwright Typescript Test', async ({page}) => {
 
-    console.log('Test Execution Started..... ');
+    
     //Go to URL
     await page.goto('https://duckduckgo.com/');
 
